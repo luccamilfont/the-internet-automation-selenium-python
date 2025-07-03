@@ -2,8 +2,8 @@ ID,Teste,Descrição,Passos,Resultado esperado,Resultado,Anotações,Implementa�
 TC01,Teste A/B - duas variações,"O site disponibiliza a rota /abtest, onde mostra um de dois resultados diferentes dependendo do cookie armazenado do usuário.","1. Navegar à home page
 2. Clicar em A/B Testing
 3. Verificar o header
-4. Resetar os cookies
+4. Resetar os cookies e atualizar a página
 5. Repetir do passo 3. até 10 vezes até identificar ambos os headers","""A/B Test Control"" e ""A/B Test Variant 1"" visíveis randomicamente","""A/B Test Control"" e ""A/B Test Variant 1"" visíveis randomicamente",Era esperado que houvesse uma documentação clara sobre essa funcionalidade do site. ,TRUE
-TC02,AB Test Cookies,"O site disponibiliza a rota /abtest_cookies, que é responsável por resetar os cookies do usuário e possibilitá-lo de ver a segunda variação do site","- Navegar diretamente à /abtest_cookies
-- Clicar no texto de link ""Click here""
+TC02,AB Test Cookies,"O site disponibiliza a rota /abtest_cookies, que é responsável por resetar os cookies do usuário e possibilitá-lo de ver a segunda variação do site","1. Navegar diretamente à /abtest_cookies
+2. Clicar no texto de link ""Click here""
 ",Resetar os cookies responsáveis por mudar o header na rota /abtest e reiniciar a página,"O site não reseta os cookies, apenas reinicia a página",É possível descobrir a rotas /abtest_cookies analizando o repositório no github. O texto de link clicável falha em executar o que a descrição promete.,FALSE
