@@ -1,7 +1,7 @@
 from selenium.webdriver.common.by import By
 from selenium import webdriver
-from automation.common import CommonOps
-from automation.ab_test import ABTest
+from pages.common import CommonOps
+from pages.ab_test import ABTest
 
 def test_ab_two_variations(driver):
     text_list = []
